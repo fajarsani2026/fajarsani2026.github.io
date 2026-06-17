@@ -3,7 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undangan Pernikahan Islami Premium</title>
+
+    <title>Undangan Pernikahan Islami Premium: Fajar & Sani</title>
+    <meta
+      name="description"
+      content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan Fajar & Sani pada Minggu, 20 September 2026."
+    />
+    <meta
+      name="keywords"
+      content="Undangan Pernikahan, Wedding Invitation, Fajar dan Sani, Undangan Digital"
+    />
+    <meta name="author" content="Fajar & Sani" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://website-kamu.com" />
+    <meta property="og:title" content="Undangan Pernikahan Fajar & Sani" />
+    <meta
+      property="og:description"
+      content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami."
+    />
+    <meta property="og:image" content="https://website-kamu.com/bg_cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://website-kamu.com" />
+    <meta property="twitter:title" content="Undangan Pernikahan Fajar & Sani" />
+    <meta
+      property="twitter:description"
+      content="Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami."
+    />
+    <meta
+      property="twitter:image"
+      content="https://website-kamu.com/bg_cover.png"
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -20,6 +53,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="heart.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="heart.ico" type="image/x-icon" />
+
     <style>
       :root {
         --primary-gold: #d4af37;
@@ -56,7 +90,6 @@
         overflow: hidden;
       }
 
-      /* Elemen bulatan abstrak blur di latar belakang */
       .abstract-blob {
         position: absolute;
         border-radius: 50%;
@@ -76,7 +109,6 @@
         height: 500px;
       }
 
-      /* Posisi spesifik blob di tiap section agar bervariasi */
       .pos-1 {
         top: -100px;
         left: -100px;
@@ -94,7 +126,6 @@
         left: -150px;
       }
 
-      /* Konten ditarik ke atas agar tidak tertutup blob */
       .section-content {
         position: relative;
         z-index: 1;
@@ -109,7 +140,7 @@
         height: 100%;
         background:
           linear-gradient(rgba(26, 60, 52, 0.85), rgba(26, 60, 52, 0.85)),
-          url("/bg_cover.png") center/cover;
+          url("bg_cover.png") center/cover;
         z-index: 9999;
         display: flex;
         flex-direction: column;
@@ -234,7 +265,7 @@
       }
       .music-control.nav-shifted {
         bottom: 100px;
-      } /* Menghindari tabrakan di mobile */
+      }
       .spinning {
         animation: spin 4s linear infinite;
       }
@@ -339,7 +370,6 @@
           height: 160px;
         }
 
-        /* Penyesuaian Navigasi di Layar HP */
         .bottom-nav {
           gap: 15px;
           padding: 8px 18px;
@@ -404,9 +434,6 @@
       <a class="nav-btn" onclick="scrollToSection('gift')">
         <i class="fa-solid fa-wallet"></i><span>Gift</span>
       </a>
-      <!-- <a class="nav-btn" onclick="scrollToSection('rsvp')">
-        <i class="fa-solid fa-comment-dots"></i><span>RSVP</span>
-      </a> -->
     </nav>
 
     <button class="music-control" id="musicBtn" onclick="toggleMusic()">
@@ -687,55 +714,6 @@
           </div>
         </div>
       </section>
-
-      <!-- <section id="rsvp" class="section-pad target-section">
-        <div class="container section-content">
-          <h2 class="section-title font-serif" data-aos="fade-down">
-            RSVP & Ucapan
-          </h2>
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-8" data-aos="fade-up">
-              <div
-                class="card p-4 shadow-sm border-0 rounded-4"
-                style="background: rgba(255, 255, 255, 0.9)"
-              >
-                <form>
-                  <div class="mb-3">
-                    <label class="form-label text-muted">Nama Lengkap</label
-                    ><input
-                      type="text"
-                      class="form-control"
-                      placeholder="Nama Anda"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label text-muted">Kehadiran</label>
-                    <select class="form-select">
-                      <option selected>Konfirmasi kehadiran</option>
-                      <option>Hadir</option>
-                      <option>Tidak Hadir</option>
-                    </select>
-                  </div>
-                  <div class="mb-4">
-                    <label class="form-label text-muted">Pesan & Doa</label
-                    ><textarea
-                      class="form-control"
-                      rows="4"
-                      placeholder="Tulis doa restu Anda"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="button"
-                    class="btn btn-gold w-100 rounded-pill py-2 fw-bold"
-                  >
-                    Kirim Konfirmasi
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
     </div>
 
     <footer
@@ -765,10 +743,9 @@
       var mainNav = document.getElementById("mainNav");
       var isPlaying = false;
 
-      // Aksi buka undangan menampilkan menu navigasi secara dinamis
       function openInvitation() {
         document.getElementById("wedding-cover").classList.add("opened");
-        mainNav.classList.remove("nav-hidden"); // Tampilkan navigasi
+        mainNav.classList.remove("nav-hidden");
         audio.play();
         isPlaying = true;
         musicIcon.className = "fa-solid fa-pause";
@@ -789,18 +766,16 @@
         }
       }
 
-      // Fungsi Klik Navigasi (Smooth Scroll)
       function scrollToSection(id) {
         document.getElementById(id).scrollIntoView({ behavior: "smooth" });
       }
 
-      // INTERSECTION OBSERVER (Logika Otomatis Tombol Aktif Saat di-Scroll)
       const sections = document.querySelectorAll(".target-section");
       const navButtons = document.querySelectorAll(".nav-btn");
 
       const observerOptions = {
         root: null,
-        rootMargin: "-20% 0px -60% 0px", // Akurasi pendeteksian tengah layar
+        rootMargin: "-20% 0px -60% 0px",
         threshold: 0,
       };
 
@@ -808,11 +783,7 @@
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute("id");
-
-            // Reset semua kelas active di tombol nav
             navButtons.forEach((btn) => btn.classList.remove("active"));
-
-            // Cari tombol yang sesuai target ID lalu berikan kelas active
             const activeBtn = Array.from(navButtons).find((btn) =>
               btn.getAttribute("onclick").includes(id),
             );
@@ -823,7 +794,6 @@
 
       sections.forEach((section) => observer.observe(section));
 
-      // Countdown Timer (20 September 2026)
       var countDownDate = new Date("Sep 20, 2026 08:00:00").getTime();
       setInterval(function () {
         var now = new Date().getTime();
@@ -845,7 +815,6 @@
           seconds < 10 ? "0" + seconds : seconds;
       }, 1000);
 
-      // Salin No Rekening
       function copyRekening(text) {
         navigator.clipboard.writeText(text).then(function () {
           var toast = document.getElementById("toast-copy");
