@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- =========================================
+         SEO & WHATSAPP PREVIEW (OPEN GRAPH)
+    ========================================= -->
     <title>Undangan Pernikahan Islami Premium: Fajar & Sani</title>
     <meta
       name="description"
@@ -15,6 +18,7 @@
     />
     <meta name="author" content="Fajar & Sani" />
 
+    <!-- Open Graph / Facebook / WhatsApp Preview -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fajarsani2026.github.io" />
     <meta property="og:title" content="Undangan Pernikahan Fajar & Sani" />
@@ -24,13 +28,14 @@
     />
     <meta
       property="og:image"
-      content="https://fajarsani2026.github.io/bg_cover_share.png"
+      content="https://fajarsani2026.github.io/bg_cover.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
+    <!-- Twitter Preview -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://website-kamu.com" />
+    <meta property="twitter:url" content="https://fajarsani2026.github.io" />
     <meta property="twitter:title" content="Undangan Pernikahan Fajar & Sani" />
     <meta
       property="twitter:description"
@@ -38,9 +43,12 @@
     />
     <meta
       property="twitter:image"
-      content="https://website-kamu.com/bg_cover.png"
+      content="https://fajarsani2026.github.io/bg_cover.png"
     />
 
+    <!-- =========================================
+         LINKS & FONTS
+    ========================================= -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -218,7 +226,7 @@
         border-radius: 40px;
         padding: 8px 25px;
         display: flex;
-        items: center;
+        align-items: center;
         gap: 25px;
         z-index: 998;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -409,7 +417,12 @@
           Fajar & Sani
         </h1>
         <p class="mt-4 mb-1">Kepada Yth.</p>
-        <h4 class="mb-5 font-serif" style="color: #eee; font-size: 1.2rem">
+        <!-- Penambahan ID 'guest-name' untuk injeksi teks lewat Javascript -->
+        <h4
+          id="guest-name"
+          class="mb-5 font-serif"
+          style="color: #eee; font-size: 1.5rem; font-weight: 600"
+        >
           Bapak/Ibu/Saudara/i
         </h4>
         <button
@@ -739,6 +752,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ once: false, mirror: true, duration: 1000 });
+
+      // =========================================
+      // AMBIL PARAMS NAMA TAMU (?to=Nama+Tamu)
+      // =========================================
+      const urlParams = new URLSearchParams(window.location.search);
+      const guestName = urlParams.get("to");
+      if (guestName) {
+        // Mengganti isi teks Bapak/Ibu/Saudara/i dengan nama dari URL
+        document.getElementById("guest-name").innerText = guestName;
+      }
 
       var audio = document.getElementById("bgMusic");
       var musicBtn = document.getElementById("musicBtn");
